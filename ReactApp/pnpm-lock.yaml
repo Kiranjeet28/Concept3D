@@ -106,7 +106,7 @@ importers:
         specifier: ^3.4.10
         version: 3.4.17
       vite:
-        specifier: ^5.4.1
+        specifier: ^5.4.14
         version: 5.4.14
 
 packages:
