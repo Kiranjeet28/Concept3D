@@ -7,6 +7,7 @@ import Footer from './sections/Footer'
 import WorkExperience from './sections/Experience'
 import Contact from './sections/Contact'
 import Clients from './sections/Clients'
+import { MinorProject } from './sections/MinorProject'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Hero/>
       <About/>
       <Project/>
+      <MinorProject/>
       <WorkExperience/>
       <Clients/>
       <Contact/>

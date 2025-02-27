@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Globe from 'react-globe.gl';
 import Button from '../components/Button.jsx';
 import { OrbitingSkills } from '../components/OrbitCircular.jsx';
-
+import { NeonGradientCard } from '../components/animations/borderAnimation.jsx';
 const About = () => {
     const [hasCopied, setHasCopied] = useState(false);
 
@@ -20,8 +20,9 @@ const About = () => {
             <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
                 <div className="col-span-1 xl:row-span-3">
                     <div className="grid-container">
-                        <img src="assets/about1.jpg" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain rounded-md" />
-
+                    <NeonGradientCard borderSize={1} className=" flex items-center justify-center text-center">
+                        <img src="assets/about1.jpg" alt="grid-1" className=" rounded-md" />
+                </NeonGradientCard>
                         <div>
                             <p className="grid-headtext">Hi, I’m Kiranjeet Kour</p>
                             <p className="grid-subtext">
