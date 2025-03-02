@@ -1,14 +1,13 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   build: {
-    target: "esnext", // Ensure latest JS features
+    target: 'esnext', // Allow modern JS features like top-level await
   },
-  optimizeDeps: {
-    esbuildOptions: {
-      target: "esnext", // Fix top-level await issue
-    },
+  esbuild: {
+    target: 'esnext', // Ensure esbuild uses modern syntax
   },
-});
+})
