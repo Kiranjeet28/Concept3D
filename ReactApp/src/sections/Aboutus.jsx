@@ -3,19 +3,9 @@ import Globe from 'react-globe.gl';
 import Button from '../components/Button.jsx';
 import { OrbitingSkills } from '../components/OrbitCircular.jsx';
 import { NeonGradientCard } from '../components/animations/borderAnimation.jsx';
-import { Canvas } from '@react-three/fiber';
-import { Keyboard } from '../components/animations/keyboard.jsx';
-import { PerspectiveCamera, OrbitControls } from '@react-three/drei';
-import { useMediaQuery } from 'react-responsive';
-import { calculateSizes } from '../constants/index.js';
-import { Suspense } from 'react';
-import CanvasLoader from '../components/CanvasLoader.jsx';
 const About = () => {
     const [hasCopied, setHasCopied] = useState(false);
-    const isSmall = useMediaQuery({ maxWidth: 440 });
-    const isMobile = useMediaQuery({ maxWidth: 768 });
-    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 })
-    const sizes = calculateSizes(isSmall, isMobile, isTablet);
+
     const handleCopy = () => {
         navigator.clipboard.writeText(' adrian@jsmastery.pro');
         setHasCopied(true);
@@ -30,9 +20,9 @@ const About = () => {
             <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
                 <div className="col-span-1 xl:row-span-3">
                     <div className="grid-container">
-                        <NeonGradientCard borderSize={1} className=" flex items-center justify-center text-center">
-                            <img src="assets/about1.jpg" alt="grid-1" className=" rounded-md" />
-                        </NeonGradientCard>
+                    <NeonGradientCard borderSize={1} className=" flex items-center justify-center text-center">
+                        <img src="assets/about1.jpg" alt="grid-1" className=" rounded-md" />
+                </NeonGradientCard>
                         <div>
                             <p className="grid-headtext">Hi, I’m Kiranjeet Kour</p>
                             <p className="grid-subtext">
@@ -45,7 +35,7 @@ const About = () => {
 
                 <div className="col-span-1 xl:row-span-3">
                     <div className="grid-container">
-                        <OrbitingSkills />
+                    <OrbitingSkills/>
 
                         <div>
                             <p className="grid-headtext">Tech Stack</p>
@@ -82,22 +72,9 @@ const About = () => {
 
                 <div className="xl:col-span-2 xl:row-span-3">
                     <div className="grid-container">
-                        <Canvas className="w-full h-full">
-                            <Suspense fallback={<CanvasLoader />}>
-                            
-                                <PerspectiveCamera makeDefault position={[0, 10, -7]} />
-                                <OrbitControls enableZoom={false} />
+                        <img src="assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
 
-                                <ambientLight intensity={0.5} />
-                                <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} intensity={1} castShadow />
-                                <pointLight position={[-10, -10, -10]} intensity={0.5} />
-
-
-                                <Keyboard position={[0, 0, 0]} rotation={[0.1, -Math.PI, 0]} scale={[2.5,3,3]} />
-                            </Suspense>
-
-                        </Canvas>                      
-                          <div>
+                        <div>
                             <p className="grid-headtext">My Passion for Coding</p>
                             <p className="grid-subtext">
                                 I love solving problems and building things through code. Programming isn&apos;t just my
