@@ -12,15 +12,15 @@ import { MinorProject } from './sections/MinorProject'
 function App() {
   return (
     <main className='max-w-7xl mx-auto'>
-      <Navbar />
-      <Hero/>
+      {/* <Navbar />
+      <Hero/> */}
       <About/>
-      <Project/>
+      {/* <Project/>
       <MinorProject/>
       <WorkExperience/>
       <Clients/>
       <Contact/>
-      <Footer/>
+      <Footer/> */}
     </main>
   )
 }
