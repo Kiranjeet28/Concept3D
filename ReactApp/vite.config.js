@@ -3,19 +3,23 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  build: {
-    target: 'esnext', // Allow modern JS features like top-level await
-    rollupOptions: {
-      external: ['@tabler/icons-react'], // Exclude the package from bundling
+  resolve: {
+    alias: {
+      '@tabler/icons-react': '@tabler/icons-react/dist/esm/index.js',
     },
   },
-  esbuild: {
-    target: 'esnext', // Ensure esbuild uses modern syntax
+  build: {
+    target: 'esnext',
+    rollupOptions: {
+      external: ['@tabler/icons-react'],
+    },
   },
   optimizeDeps: {
-    include: ['@tabler/icons-react'], // Ensure it's pre-bundled
+    include: ['@tabler/icons-react'],
   },
 })
+
+
 // import { defineConfig } from "vite";
 // import react from "@vitejs/plugin-react";
 
