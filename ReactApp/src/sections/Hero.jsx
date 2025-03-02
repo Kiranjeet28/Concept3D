@@ -1,5 +1,6 @@
 import { Leva } from 'leva'; // tool use for the controls the position to set the values of the 3D Model 
 import { Suspense } from 'react';
+import CanvasLoader from '../components/CanvasLoader.jsx';
 import { Canvas } from '@react-three/fiber';
 import { useMediaQuery } from 'react-responsive';
 import { PerspectiveCamera } from '@react-three/drei';
@@ -9,7 +10,6 @@ import Rings from '../components/Rings.jsx';
 import ReactLogo from '../components/ReactLogo.jsx';
 import Button from '../components/Button.jsx';
 import Target from '../components/Target.jsx';
-import CanvasLoader from '../components/CanvasLoader.jsx';
 import HeroCamera from '../components/HeroCamera.jsx';
 import { calculateSizes } from '../constants/index.js';
 import { HackerRoom } from '../components/HackerRoom.jsx';
