@@ -24,7 +24,8 @@ const About = () => {
             setHasCopied(false);
         }, 2000);
     };
-
+    const options = [8, 7, 9, 10, 11];
+    const [selected, setSelected] = useState(9);
     return (
         <section className="c-space my-20" id="about">
             <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
@@ -84,7 +85,7 @@ const About = () => {
                     <div className="grid-container">
                         <Canvas className="w-full h-full">
                             <Suspense fallback={<CanvasLoader />}>
-                            
+
                                 <PerspectiveCamera makeDefault position={[0, 10, -7]} />
                                 <OrbitControls enableZoom={false} />
 
@@ -93,11 +94,11 @@ const About = () => {
                                 <pointLight position={[-10, -10, -10]} intensity={0.5} />
 
 
-                                <Keyboard position={[0, 0, 0]} rotation={[0.1, -Math.PI, 0]} scale={[2.5,3,3]} />
+                                <Keyboard position={[0, 0, 0]} rotation={[0.1, -Math.PI, 0]} scale={[2.5, 3, 3]} />
                             </Suspense>
 
-                        </Canvas>                      
-                          <div>
+                        </Canvas>
+                        <div>
                             <p className="grid-headtext">My Passion for Coding</p>
                             <p className="grid-subtext">
                                 I love solving problems and building things through code. Programming isn&apos;t just my
@@ -107,14 +108,19 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="xl:col-span-1 xl:row-span-2">
+                <div className="mx-auto xl:col-span-1 xl:row-span-2">
                     <div className="grid-container">
-                        <img
-                            src="assets/grid4.png"
-                            alt="grid-4"
-                            className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"
-                        />
-
+                            <div className="relative flex items-center gap-4">
+                                {options.map((num, index) => (
+                                    <button
+                                        key={num}
+                                        className={`relative flex items-center justify-center w-12 h-12 text-gray-400 bg-gray-800 rounded-full transition-all duration-300 
+              ${selected === num ? "w-16 h-20 text-white animate-pulse bg-gray-800 border-2 border-[#00FFF1] animate-border-pulse" : "hover:text-white hover:bg-gray-700"}            `}
+                                        onClick={() => setSelected(num)}
+                                    >
+                                        {num}
+                                    </button>                                ))}
+                            </div>
                         <div className="space-y-2">
                             <p className="grid-subtext text-center">Contact me</p>
                             <div className="copy-container" onClick={handleCopy}>
