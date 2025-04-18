@@ -18,8 +18,8 @@ function App() {
       <Project/>
       <MinorProject/>
       <WorkExperience/>
-      <Clients/>
-      <Contact/>
+      {/* <Clients/> */}
+      {/* <Contact/> */}
       <Footer/>
     </main>
   )

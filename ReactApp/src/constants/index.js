@@ -14,11 +14,7 @@ export const navLinks = [
     name: 'Work',
     href: '#work',
   },
-  {
-    id: 4,
-    name: 'Contact',
-    href: '#contact',
-  },
+  
 ];
 
 export const clientReviews = [
@@ -58,13 +54,13 @@ export const clientReviews = [
 
 export const myProjects = [
   {
-    title: 'Podcastr - AI Podcast Platform',
-    desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
+    title: 'Youtube Clone',
+    desc: 'This is a clone project that replicates many features of YouTube while adding extra functionality You can video call and watch YouTube videos together by sharing a link with others through the chat feature, powered by WebSockets and Node.js.Users can subscribe to channels, with subscription data stored in MongoDB and account management handled by AppWrite',
     subdesc:
-      'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-    href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+      '.The platform includes an Interested Section that displays channels you are interested in.It also offers features similar to YouTube, such as watch history, video categories, comments, likes, and more.',
+    href: 'https://github.com/Kiranjeet28/Youtube-clone',
     texture: '/textures/project/project1.mp4',
-    logo: '/assets/project-logo1.png',
+    logo: 'https://thumbs.dreamstime.com/b/youtube-play-button-vector-illustration-cartoon-youtube-play-button-shadow-background-vector-illustration-cartoon-262961349.jpg',
     logoStyle: {
       backgroundColor: '#2A1816',
       border: '0.2px solid #36201D',
@@ -89,19 +85,17 @@ export const myProjects = [
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'Node JS',
+        path: 'https://www.step2gen.com/WebsiteAssets/assets/images/nodejs.svg',
       },
     ],
   },
   {
-    title: 'LiveDoc - Real-Time Google Docs Clone',
-    desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
-    subdesc:
-      'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-    href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-    texture: '/textures/project/project2.mp4',
-    logo: '/assets/project-logo2.png',
+      title: "Let's Travel",
+      desc: "Listing of Top 10 Hotels, Agencies, DMCs, and Influencers in any state or country around the world. Search filter provides efficient and fast results on the same page. Hotels, Agencies, DMCs, and Influencers can register themselves on the website and access a dashboard to: Manage their data, Upload photos and videos, Add different tags, Include previous client and employee data, Promote their business worldwide. An Admin Dashboard is available to manage the priority of Hotels, Agencies, DMCs, and Influencers. A Helpdesk is available on both the user and admin dashboards.",  
+    href: 'https://lets-travel-six.vercel.app',
+    texture: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZgVTa3MSFUi_bau9PL4Ecb3z-yuKkcPCzQQ&shttps://t3.ftcdn.net/jpg/07/02/29/64/360_F_702296476_RndsGSoSJQhIDUYt4ZeC9KbO6lewBfk2.jpghttps://t3.ftcdn.net/jpg/07/02/29/64/360_F_702296476_RndsGSoSJQhIDUYt4ZeC9KbO6lewBfk2.jpg',
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZgVTa3MSFUi_bau9PL4Ecb3z-yuKkcPCzQQ&shttps://t3.ftcdn.net/jpg/07/02/29/64/360_F_702296476_RndsGSoSJQhIDUYt4ZeC9KbO6lewBfk2.jpghttps://t3.ftcdn.net/jpg/07/02/29/64/360_F_702296476_RndsGSoSJQhIDUYt4ZeC9KbO6lewBfk2.jpg',
     logoStyle: {
       backgroundColor: '#13202F',
       border: '0.2px solid #17293E',
@@ -111,8 +105,8 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
+        name: 'Next JS ',
+        path: 'https://static-00.iconduck.com/assets.00/nextjs-icon-1024x1024-5et230l7.png',
       },
       {
         id: 2,
@@ -124,60 +118,18 @@ export const myProjects = [
         name: 'TypeScript',
         path: '/assets/typescript.png',
       },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
-      },
+     
     ],
   },
+ 
   {
-    title: 'CarePulse - Health Management System',
-    desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
+    title: 'Quiz Application with Auth',
+    desc: "The application utilizes OTP-based authentication to ensure secure user login and protect critical actions like adding or deleting admin accounts. It features an interactive and educational quiz system that includes score tracking to enhance user engagement. Administrators have access to tools for quiz management as well as detailed user activity reports, providing insights and control.",
     subdesc:
-      'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-    href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
-    texture: '/textures/project/project3.mp4',
-    logo: '/assets/project-logo3.png',
-    logoStyle: {
-      backgroundColor: '#60f5a1',
-      background:
-        'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
-      border: '0.2px solid rgba(208, 213, 221, 1)',
-      boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
-    },
-    spotlight: '/assets/spotlight3.png',
-    tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
-      },
-    ],
-  },
-  {
-    title: 'Horizon - Online Banking Platform',
-    desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
-    subdesc:
-      'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-    href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-    texture: '/textures/project/project4.mp4',
-    logo: '/assets/project-logo4.png',
+      " The user interface is designed with an intuitive GUI built using Java Swing and AWT, making it easy to navigate. To further support users, a Help button is included, offering instructional videos that guide them through the application's features and functionality.",
+    href: 'https://github.com/Kiranjeet28/Quiz-application-with-Authentication-',
+    texture: '/textures/project/project2.mp4',
+    logo: 'https://static.vecteezy.com/system/resources/previews/007/343/533/original/yellow-quiz-time-banner-with-comic-style-background-suitable-for-use-for-promotional-designs-vector.jpg',
     logoStyle: {
       backgroundColor: '#0E1F38',
       border: '0.2px solid #0E2D58',
@@ -187,63 +139,19 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
+        name: 'Java',
+        path: 'https://nerdysoft.com/wp-content/uploads/2021/11/java-14-1.svg',
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: 'MySQL',
+        path: 'https://www.ovhcloud.com/sites/default/files/styles/large_screens_1x/public/2021-09/ECX-1909_Hero_MySQL_600x400%402x-1.png',
       },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
-      },
+    
+   
     ],
   },
-  {
-    title: 'Imaginify - AI Photo Manipulation App',
-    desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
-    subdesc:
-      'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-    href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-    texture: '/textures/project/project5.mp4',
-    logo: '/assets/project-logo5.png',
-    logoStyle: {
-      backgroundColor: '#1C1A43',
-      border: '0.2px solid #252262',
-      boxShadow: '0px 0px 60px 0px #635BFF4D',
-    },
-    spotlight: '/assets/spotlight5.png',
-    tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
-      },
-    ],
-  },
+  
 ];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
@@ -260,29 +168,29 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: 'Framer',
-    pos: 'Lead Web Developer',
-    duration: '2022 - Present',
-    title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-    icon: '/assets/framer.svg',
+    name: 'Mohey Innovations',
+    pos: 'Web Developer',
+    duration: 'Nov 2024 - Present',
+    title: "Worked at a startup where I gained hands-on experience in managing various aspects of a project. Handled both frontend and backend development, along with deployment responsibilities.",
+    icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS6XQky7hNYwbp8bQ30RLNzc3riPqosYKKRw&s',
     animation: 'victory',
   },
   {
     id: 2,
-    name: 'Figma',
+    name: 'RD group of Industries',
     pos: 'Web Developer',
-    duration: '2020 - 2022',
-    title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: '/assets/figma.svg',
+    duration: 'Jul 2024 - Sep 2024',
+    title: "Gained full-stack development experience while working under tight deadlines. Learned to collaborate effectively with a team and improved my communication skills in a professional environment.",
+    icon: 'https://media.licdn.com/dms/image/v2/C560BAQHQ-yCD-LnPhw/company-logo_200_200/company-logo_200_200/0/1630669708377?e=2147483647&v=beta&t=cB4g93R3CQSsKiMCogwDl33QsL0Mp6fhxLZUd9x6b3U',
     animation: 'clapping',
   },
   {
     id: 3,
-    name: 'Notion',
+    name: 'Voltsec.io',
     pos: 'Junior Web Developer',
-    duration: '2019 - 2020',
-    title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: '/assets/notion.svg',
+    duration: 'Apr 2024 - Jul 2024',
+    title: "At Voltsec.io, I improved my organizational skills by managing projects, tracking tasks, and maintaining centralized documentation. Gained exposure to team workflows and agile methodologies.",
+    icon: 'https://avatars.githubusercontent.com/u/105448433?s=280&v=4',
     animation: 'salute',
   },
 ];
